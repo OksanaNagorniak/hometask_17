@@ -16,7 +16,9 @@ class Human:
         self.address = address
 
     def get_info(self):
-        print(f'name: {self.name}, surname:{self.surname}, age:{self.age}, phone: {self.phone}, address: {self.address}')
+        my_dict = {'name': {self.name}, 'surname': {self.surname}, 'age': {self.age}, 'phone': {self.phone},
+                   'address': {self.address}}
+        print(my_dict)
 
     def call(self, phone_number: int):
         print(f'{self.phone} вызывает абонента {phone_number}')
